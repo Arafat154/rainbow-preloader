@@ -1,0 +1,67 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background: #fff;
+   width: 100%;
+   height: 100%;
+}
+
+.main {
+   width: 200px;
+   height: 200px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   overflow: hidden;
+}
+
+.loader {
+   width: calc(100% - 24px);
+   height: calc(100% - 24px);
+   border-radius: 50%;
+   border: 12px solid #2d3436;
+   border-bottom: 12px solid;
+   animation: loader 6s infinite linear;
+}
+
+.c1 {
+   border-color: transparent transparent violet transparent;
+}
+
+.c2 {
+   border-color: transparent transparent indigo transparent;
+}
+
+.c3 {
+   border-color: transparent transparent blue transparent;
+}
+
+.c4 {
+   border-color: transparent transparent green transparent;
+}
+
+.c5 {
+   border-color: transparent transparent yellow transparent;
+}
+
+.c6 {
+   border-color: transparent transparent orange transparent;
+}
+
+.c7 {
+   border-color: transparent transparent red transparent;
+}
+
+@keyframes loader {
+   0% {
+      transform: rotate(0deg);
+   }
+
+   100% {
+      transform: rotate(360deg);
+   }
+}
